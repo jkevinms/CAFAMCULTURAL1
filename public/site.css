@@ -1,0 +1,734 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+   background-color: black;
+    color: white;
+}
+
+
+.links{
+  position: relative;
+  right: 95px;
+}
+.navbar .links a, .navbar .cuenta a {
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+.hero {
+    position: sticky;
+    height: 500px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-content {
+    position: relative;
+    top: 160px;
+    z-index: 1;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.intro {
+    padding: 2em;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    position: relative;
+    background-color: #3a3838;
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.card2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/playa\ juan\ dolio.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.card3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/catedran\ san\ pedro\ de\ macoris.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.card4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Museo\ de\ historia.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.card5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Centro\ Historico\ ron\ barcelo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.card6:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Rio\ Cumayasi.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+.card1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cueva.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+
+.tradiciones {
+    text-align: center;
+    padding: 3em 1em;
+    background-color: white;
+}
+
+.tradiciones h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.tradiciones p {
+    max-width: 700px;
+    margin: 0 auto 2em;
+    font-size: 1em;
+    color: #444;
+}
+
+.tradiciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.Imagen-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.Imagen {
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Imagen:hover {
+    transform: scale(1.5);
+}
+
+.mision {
+    background: #e7e3dc url('x" width="40" height="40"><text x="0" y="20" font-size="20" fill="gray">✂️</text></svg>') repeat;
+    padding: 4em 1em;
+
+}
+
+.mision-box {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mision-box h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.mision-box p {
+    text-align: justify;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.card1 * {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+
+}
+
+.card1:hover::before, .card2:hover::before, .card3:hover::before, .card4:hover::before, .card5:hover::before ,.card6:hover::before {
+    opacity: 1;
+}
+
+.card1:hover * {
+    opacity: 0;
+} 
+
+.Reservas {
+    height: 70px;
+    width: 160px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #639aff;
+    color: white;
+    border: 2px solid rgb(62, 62, 62); 
+    padding: 1em 1.5em;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.Reservas:hover {
+    background-color: #4b7390;
+}
+
+.modal {
+    display: none;      
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 10px;
+}
+
+#close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 101;
+}
+#modalcards {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+#cards1 {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.card-img-gif {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+#close1 {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #444;
+}
+#selection{
+    margin-left: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+} 
+
+@media (max-width: 600px) {
+  .carousel {
+    padding-top: 50%;
+  }
+
+  #carousel__slide1, #carousel__slide2, #carousel__slide3, #carousel__slide4 {
+    height: 20em;
+  }
+}
+
+.carousel{
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 10px ;
+  margin-top: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; 
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 30%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+  margin-bottom: 100px;
+}
+#carousel__slide1{
+background-image: url(images/artesanias\ electronica.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide2{
+  background-image: url(images/artesania\ en\ coco.jpeg);
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide3{
+  background-image: url(images/san\ pedro\ electronica\ 2.jpg);
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide4{
+  background-image: url(images/san\ pedro\ electronica.jpg  );
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide5{
+  background-image: url(images/yaniqueque\ electronica.jpg );
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide6{
+  background-image: url(images/VirgendelaAltagracia.jpeg );
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+#carousel__slide7{
+  background-image: url(images/MusicadePalos.jpg );
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 30em;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  
+
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+.carousel__slide:before {
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  position: relative;
+  bottom: -10px;
+  display: inline-block;
+  width: 1.0rem;
+  height: 1.0rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel__navigation-button.active {
+    background-color: #fff;
+    border-color: #333;
+  }
+  .titulo-carousel {
+    position: relative;
+    top: -550px; 
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: bold;
+    color: black; 
+}
+.card-gif{
+  display: none;
+}
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
